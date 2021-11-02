@@ -1,7 +1,7 @@
-- name: Hello World Sample
+- name: REstart a Service
   hosts: all
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
-
+    - name: Restart service httpd, in all cases
+      ansible.builtin.service:
+        name: httpd
+        state: restarted
