@@ -1,4 +1,4 @@
-- name: REstart a Service
+- name: Restart a Service
   hosts: all
   tasks:
     - name: Restart service httpd, in all cases
