@@ -1,5 +1,6 @@
 - name: Restart a Service
   hosts: all
+  become: yes
   tasks:
     - name: Restart service crond, in all cases
       ansible.builtin.service:
