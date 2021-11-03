@@ -1,7 +1,7 @@
 - name: Restart a Service
   hosts: all
   tasks:
-    - name: Restart service httpd, in all cases
+    - name: Restart service crond, in all cases
       ansible.builtin.service:
-        name: httpd
+        name: crond
         state: restarted
