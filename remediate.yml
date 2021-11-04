@@ -1,11 +1,7 @@
 - name: Restart a Service
   hosts: all
   tasks:
-    - name: Restart service crond, in all case
-      ansible.builtin.service:
-        name: crond
-        state: restarted
-      become: yes
-      become_method: su
-      become_user: nobody
-      become_flags: '-s /bin/sh'
+    - name: URI
+      uri:
+        url: http://marathon.service.consul:8080/v2/apps/
+        method: POST
