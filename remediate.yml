@@ -5,4 +5,5 @@
     - name: Restart service crond, in all cases
       ansible.builtin.service:
         name: crond
-        state: restarted
+        #state: restarted
+        state: reloaded
