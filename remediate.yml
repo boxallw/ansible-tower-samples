@@ -4,4 +4,4 @@
     - name: URI
       uri:
         url: https://redhat.com
-        method: POST
+        #method: POST
