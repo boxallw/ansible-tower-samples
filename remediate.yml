@@ -3,5 +3,5 @@
   tasks:
     - name: URI
       uri:
-        url: http://marathon.service.consul:8080/v2/apps/
+        url: https://redhat.com
         method: POST
