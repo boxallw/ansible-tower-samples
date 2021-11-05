@@ -17,7 +17,7 @@
           content-type: application/json
         body:
           comment: "Rolling back promotion campaign"
-          user: Admin
+          user: admin
           context: Ansible
         body_format: json
         status_code: 200
