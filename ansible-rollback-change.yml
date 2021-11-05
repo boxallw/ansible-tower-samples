@@ -7,11 +7,11 @@
     -
       name: "rollback a change with Ansible task(s)"
       uri:
-        url: "replace this module with the module of your choice to rollback the change"
+        url: "http://35.186.151.37/carts/1/items/promotion/0"
     -
       name: "send Dynatrace custom configuration event with business context information"
       uri:
-        url: https://{{ dynatrace_api_url }}/api/v1/events?Api-Token={{ dynatrace_token }}
+        url: https://dwy90787.live.dynatrace.com/api/v1/events?Api-Token=dt0c01.HLULYHXSP3LD7MQJAVT45J2M.SFSTIFAZYKBR3B7SENEWIWOECPKHNVCKZHUTHIWJECGQZLN2BHQEH2273QNVIYQN
         method: POST
         headers:
           content-type: application/json
