@@ -16,24 +16,8 @@
         headers:
           content-type: application/json
         body:
-          eventType: CUSTOM_CONFIGURATION
-          attachRules:
-            tagRule:
-            - meTypes:
-              - SERVICE
-              - PROCESS_GROUP_INSTANCE
-              - HOST
-              tags:
-              - context: CONTEXTLESS
-                key: "{{ configuration_tag_key }}"
-                value: "{{ configuration_tag_value }}"
-          source: Ansible Tower
-          description: "{{ configuration_details }}"
-          configuration: "{{ configuration_type }}"
-          customProperties:
-            Change Ticket: "{{ configuration_change_ticket }}"
-            Change New: "{{ configuration_new }}"
-            Change Old: "{{ configuration_old }}"
-            Remediation: "{{ configuration_remediation }}"
+          comment: "Rolling back promotion campaign"
+          user: Admin
+          Context: Ansible
         body_format: json
         status_code: 200
