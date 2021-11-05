@@ -11,7 +11,7 @@
     -
       name: "send Dynatrace custom configuration event with business context information"
       uri:
-        url: https://dwy90787.live.dynatrace.com/api/v1/events?Api-Token=dt0c01.HLULYHXSP3LD7MQJAVT45J2M.SFSTIFAZYKBR3B7SENEWIWOECPKHNVCKZHUTHIWJECGQZLN2BHQEH2273QNVIYQN
+        url: https://dwy90787.live.dynatrace.com/api/v1/problem/details/{{ ProblemID }}/comments?Api-Token=dt0c01.HLULYHXSP3LD7MQJAVT45J2M.SFSTIFAZYKBR3B7SENEWIWOECPKHNVCKZHUTHIWJECGQZLN2BHQEH2273QNVIYQN
         method: POST
         headers:
           content-type: application/json
